@@ -1,0 +1,29 @@
+{
+  "name": "@monorepo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "turbo run dev",
+    "check": "turbo run test typecheck",
+    "dev:utils": "turbo run dev --filter=@monorepo/utils",
+    "dev:blog": "turbo run dev --filter=@monorepo/blog",
+    "dev:dashboard": "turbo run dev --filter=@monorepo/dashboard",
+    "test:utils": "turbo run test --filter=@monorepo/utils",
+    "test:blog": "turbo run test --filter=@monorepo/blog",
+    "test:dashboard": "turbo run test --filter=@monorepo/dashboard",
+    "typecheck:utils": "turbo run typecheck --filter=@monorepo/utils",
+    "typecheck:blog": "turbo run typecheck --filter=@monorepo/blog",
+    "typecheck:dashboard": "turbo run typecheck --filter=@monorepo/dashboard"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "workspaces": [
+    "apps/*",
+    "libs/*"
+  ],
+  "devDependencies": {
+    "turbo": "^1.5.4"
+  }
+}
