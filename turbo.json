@@ -11,9 +11,6 @@
       "dependsOn": ["^build"],
       "outputs": [".next/**", "dist/**"]
     },
-    "typecheck": {},
-    "@monorepo/dashboard#typecheck": {
-      "dependsOn": ["@monorepo/utils#typecheck"]
-    }
+    "typecheck": {}
   }
 }
